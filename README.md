@@ -16,7 +16,7 @@ This is a web application for exploring and favoriting business books.
 1. Clone the repository to your local machine:
 git clone https://github.com/your-username/business-books.git
 
-3. Navigate to the project directory:
+2. Navigate to the project directory:
 cd business-books
 
 3. Install dependencies using npm:
