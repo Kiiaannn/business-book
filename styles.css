@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+#chat-windows {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.chat-window {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  height: 400px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  display: block;
+  resize: both;
+  overflow: auto;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.chat-header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-messages {
+  height: calc(100% - 60px);
+  overflow-y: scroll;
+  padding: 10px;
+}
+
+.chat-input {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.book-thumbnail {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 128px;
+  height: 192px;
+}
+
+main.container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.header-section {
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.header-section h1 {
+  margin-bottom: 10px;
+}
+
+.book-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.book-section img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 128, 0.5);
+}
+
+.home-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.home-text {
+  max-width: 50%;
+}
+
+.home-text h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.home-text p {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.home-image {
+  position: relative;
+  max-width: 40%;
+}
+
+.home-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.image-shadow {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: darkblue;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+#owner-controls {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 200px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#owner-controls h2 {
+  margin-bottom: 10px;
+}
+
+#client-list {
+  list-style: none;
+}
+
+#client-list li {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+#client-list li:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .home-text,
+  .home-image {
+    max-width: 100%;
+  }
+  #chat-windows {
+    width: 250px;
+  }
+}
